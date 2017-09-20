@@ -1,8 +1,14 @@
 {
-  "name": "weddifycore",
+  "name": "weddify-core",
   "description": "My weddify app put in a react-redux wrapper with .net core in the middle",
   "private": true,
   "version": "0.1.0",
+  "scripts": {
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node tools/srcServer.js",
+    "security-check": "nsp check"
+  },
   "dependencies": {
     "@types/history": "4.6.0",
     "@types/react": "16.0.5",
@@ -13,14 +19,13 @@
     "@types/react-router-redux": "5.0.8",
     "@types/webpack": "3.0.10",
     "@types/webpack-env": "1.13.1",
-    "aspnet-prerendering": "3.0.1",
-    "aspnet-webpack": "2.0.1",
-    "aspnet-webpack-react": "3.0.0",
     "awesome-typescript-loader": "3.1.3",
+    "babel-preset-react-hmre": "1.1.1",
     "bootstrap": "3.3.7",
     "css-loader": "0.28.1",
     "domain-task": "3.0.3",
     "event-source-polyfill": "0.0.9",
+    "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "0.11.1",
     "history": "4.7.2",
@@ -30,6 +35,7 @@
     "material-ui": "0.19.1",
     "moment": "2.18.1",
     "node-noop": "1.0.0",
+    "open": "0.0.5",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-google-maps": "8.2.0",
@@ -46,7 +52,18 @@
     "typescript": "2.5.2",
     "url-loader": "0.5.9",
     "webpack": "3.6.0",
-    "webpack-hot-middleware": "2.19.1",
     "webpack-merge": "4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.5.0",
+    "babel-register": "6.8.0",
+    "html-webpack-plugin": "2.30.1",
+    "webpack-dev-middleware": "1.12.0",
+    "webpack-hot-middleware": "2.19.1"
   }
 }
