@@ -2,6 +2,9 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import App from './components/presentational/App';
 import { AppContainer } from 'react-hot-loader';
+let injectTapEventPlugin = require('react-tap-event-plugin');
+
+injectTapEventPlugin();
 
 render(
   <AppContainer>
