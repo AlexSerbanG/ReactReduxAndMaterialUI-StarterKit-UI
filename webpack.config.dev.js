@@ -28,7 +28,8 @@ export default {
     rules: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
       {test: /\.tsx?$/, exclude: /node_modules/, loader: ['ts-loader']},
-      {test: /\.css$/, loaders: ['style','css']}
+      {test: /\.css$/, loaders: ['style','css']},
+      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'}
     ]
   }
 };
