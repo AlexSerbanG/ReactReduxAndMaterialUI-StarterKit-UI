@@ -1,10 +1,10 @@
 # TestNewIDE
 Testing a new JS dev env from cory house's pluralsight tut
 
-#Purpose
+# Purpose
 Develop my skills and in the end, acquire not only the knowledge but also the concrete starter kit for any future projects I'll start using react and redux
 
-##Steps:
+## Steps:
 1. Started with a very simple 'empty' git repo
 2. Added an editor config file for my chosen editor (vs code)
 3. Added package.json
@@ -19,12 +19,12 @@ Develop my skills and in the end, acquire not only the knowledge but also the co
 11. Added Material UI and rendered my first mui component 
 12. Added Redux to the app and rendered my first redux connected component 
 
-##Help came from and thanks go to
+## Help came from and thanks go to
 Cory House with his Pluralsight courses: -Javascript Development Environment and -React and Redux in ES6
 Cory House with his pluralsight-redux-starter kit on git-hub at https://github.com/coryhouse/pluralsight-redux-starter
 Cory House with his react-slingshot advanced starter kit on git-hub at https://github.com/coryhouse/react-slingshot
 Everyone else on github and stackoverflow coming with solutions to problems that I found throughout the development process
 Dan Abramov for offering great support and documentation for the redux library
 
-##Known Issues
+## Known Issues
 NSP (node security project) does not pass anymore so I had to have it disabled
