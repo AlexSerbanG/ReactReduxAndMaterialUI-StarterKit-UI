@@ -1,14 +1,18 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import App from './components/presentational/App';
 import { AppContainer } from 'react-hot-loader';
+import App from './components/presentational/App';
+import configureStore, { history } from './store/configureStore';
 let injectTapEventPlugin = require('react-tap-event-plugin');
+require('./favicon.ico');
+
 
 injectTapEventPlugin();
+const store = configureStore();
 
 render(
   <AppContainer>
-      <App/>
+      <App store={store} history={history}/>
   </AppContainer>,
   document.getElementById('my-app')
 );
@@ -17,7 +21,7 @@ if (module.hot) {
   module.hot.accept('./components/presentational/App', () => {
     const NewRoot = require('./components/presentational/App').default;
     render(
-        <NewRoot />,
+        <NewRoot store={store} history={history}/>,
       document.getElementById('my-app')
     );
   });
