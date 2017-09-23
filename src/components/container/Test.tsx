@@ -11,7 +11,7 @@ type Props = Store.TestState & typeof Store.actionCreators;
 class Test extends React.Component<Props,{}> {
   public render(){
     return(<div> 
-      <h2>>And guess what, we also have Redux</h2>
+      <h2>And guess what, we also have Redux</h2>
       <h3>{this.props.text}</h3>
       <Warning color={colors.orange}/>
       <RaisedButton 
