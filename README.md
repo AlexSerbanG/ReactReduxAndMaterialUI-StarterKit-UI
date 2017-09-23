@@ -19,7 +19,7 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 10. Added Typescript and with it a tsconfig file
 11. Added Material UI and rendered my first mui component 
 12. Added Redux to the app and rendered my first redux connected component 
-13. Added testing capabilites using Mocha, Expect and Enzyme
+13. Added testing capabilites using Jest
 
 ## Help came from and thanks go to
 - Cory House with his Pluralsight courses: -Building a Javascript Development Environment and - Building Applications with React and Redux in ES6
