@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import * as Store from '../../store/Test';
 import RaisedButton from 'material-ui/RaisedButton';
 import { ApplicationState } from '../../models/ApplicationState';
-import initialState from '../../store/initialState';
 
 type Props = Store.TestState & typeof Store.actionCreators;
 

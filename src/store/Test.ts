@@ -2,6 +2,7 @@ import { Reducer } from 'redux';
 import { TestVM } from '../models/TestVM';
 import { Test as actionTypes } from './actionTypes';
 import initialState from './initialState';
+
 //state
 export interface TestState extends TestVM {
 
@@ -21,6 +22,7 @@ export const actionCreators = {
   }
 };
 
+//reducer
 export const reducer: Reducer<TestState> = (state: TestState = initialState.test, action: TestLoad) => {
   switch (action.type) {
     case actionTypes.TEST_LOAD:
@@ -29,4 +31,3 @@ export const reducer: Reducer<TestState> = (state: TestState = initialState.test
       return {...state};
   }
 } 
-
