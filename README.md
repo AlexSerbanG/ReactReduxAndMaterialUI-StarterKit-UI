@@ -22,7 +22,7 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 13. Added testing capabilites using Jest
 14. Added webpack production config and also other loaders for styles/woffs and what not. Included npm scripts for build as well.
 15. Split main js to main and vendor files and added hashing for cache and cache breaking
-16. Added 
+16. Added instalation scripts and packages required for that
 
 ## Help came from and thanks go to
 - Cory House with his Pluralsight courses: -Building a Javascript Development Environment and - Building Applications with React and Redux in ES6
