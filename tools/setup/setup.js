@@ -1,12 +1,14 @@
 /* eslint-disable no-var */
+var chalk = require('chalk');
 var rimraf = require('rimraf');
-var replace = require('replace');
 var prompt = require('prompt');
+var replace = require('replace');
 var prompts = require('./setupPrompts');
 
-import { chalkSuccess, chalkProcessing, chalkWarning } from '../chalkConfig';
-
 /* eslint-disable no-console */
+var chalkSuccess = chalk.green;
+var chalkProcessing = chalk.blue;
+var chalkWarning = chalk.red;
 
 console.log(chalkSuccess('Dependencies installed.'));
 
