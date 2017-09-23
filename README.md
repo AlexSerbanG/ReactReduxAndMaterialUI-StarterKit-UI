@@ -1,4 +1,4 @@
-# ReactReduxAndTypescript-StarterKit
+# React, Redux And Typescript - Starter Kit
 Testing a new JS dev env from Cory House's Pluralsight tutorial, but adding material-UI and configuring the structure a bit differently, to better suit my needs
 
 
