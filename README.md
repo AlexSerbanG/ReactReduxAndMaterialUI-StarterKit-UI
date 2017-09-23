@@ -22,6 +22,7 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 13. Added testing capabilites using Jest
 14. Added webpack production config and also other loaders for styles/woffs and what not. Included npm scripts for build as well.
 15. Split main js to main and vendor files and added hashing for cache and cache breaking
+16. Added 
 
 ## Help came from and thanks go to
 - Cory House with his Pluralsight courses: -Building a Javascript Development Environment and - Building Applications with React and Redux in ES6
@@ -30,27 +31,23 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 - Everyone else on github and stackoverflow coming with solutions to problems that I found throughout the development process
 - Dan Abramov for offering great support and documentation for the redux library
 
+## Get Started
 1. **Initial Machine Setup**. First time running the starter kit? Then complete the [Initial Machine Setup](https://github.com/coryhouse/react-slingshot#initial-machine-setup).
-2. **Clone the project**. `git clone https://github.com/coryhouse/react-slingshot.git`.
+2. **Clone the project**. `git clone https://github.com/AlexSerbanG/ReactReduxAndTypescript-StarterKit-UI`.
 3. **Run the setup script**. `npm run setup`
 4. **Run the example app**. `npm start -s`
 This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
-5. **Review the example app.** This starter kit includes a working example app that calculates fuel savings. Note how all source code is placed under /src. Tests are placed alongside the file under test. The final built app is placed under /dist. These are the files you run in production.
+5. **Review the example app.** --Unavailable atm - Ignore this paragraph --This starter kit includes a working example app that calculates fuel savings. Note how all source code is placed under /src. Tests are placed alongside the file under test. The final built app is placed under /dist. These are the files you run in production.
 6. **Delete the example app files.** Once you're comfortable with how the example app works, you can [delete those files and begin creating your own app](https://github.com/coryhouse/react-slingshot/blob/master/docs/FAQ.md#i-just-want-an-empty-starter-kit). 
 7. **Having issues?** See "Having Issues?" below.
 
-## Initial Machine Setup
-1. **Install [Node 4.0.0 or greater](https://nodejs.org)** - (5.0 or greater is recommended for optimal build performance). Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm).
-2. **Install [Git](https://git-scm.com/downloads)**. 
-3. **[Disable safe write in your editor](https://webpack.js.org/guides/development/#adjusting-your-text-editor)** to assure hot reloading works properly.
-4. On a Mac? You're all set. If you're on Linux or Windows, complete the steps for your OS below.  
 
 
 ## Having Issues? Try these things first.
 1. Make sure you ran all steps in [Get started](https://github.com/coryhouse/react-slingshot/blob/master/README.md#get-started) including the [initial machine setup](https://github.com/coryhouse/react-slingshot#initial-machine-setup).
 2. Run `npm install` - If you forget to do this, you'll see this: `babel-node: command not found`.
-3. Install the latest version of Node. Or install [Node 5.12.0](https://nodejs.org/download/release/v5.12.0/) if you're having issues on Windows. Node 6 has issues on some Windows machines.
-4. Make sure files with names that begin with a dot (.babelrc, .editorconfig, .eslintrc) are copied to the project directory root. This is easy to overlook if you copy this repository manually.
+3. Install the latest version of Node. Node 6 has issues on some Windows machines.
+4. Make sure files with names that begin with a dot (.babelrc, .editorconfig) are copied to the project directory root. This is easy to overlook if you copy this repository manually.
 5. Don't run the project from a symbolic link. It may cause issues with file watches.
 6. Delete any .eslintrc that you're storing in your user directory. Also, disable any ESLint plugin / custom rules that you've enabled within your editor. These will conflict with the ESLint rules defined in this project.
 7. Make sure you don't have NODE_ENV set to production on your machine. If you do then the [development dependencies won't be installed](https://github.com/coryhouse/react-slingshot/issues/400#issuecomment-290497767). Here's [how to check](http://stackoverflow.com/a/27939821/26180).
@@ -64,6 +61,6 @@ This will run the automated build process, start up a webserver, and open the ap
       > Note: Adding `exit 0` will allow the npm scripts to ignore the status 1 and allow ESW to print all warnings and errors.
   
     * Ensure the `eslint`/`esw` globally installed version matches the version used in the project. This will ensure the `esw` keyword is resolved.
-    
+
 ## Known Issues
 None, so far
