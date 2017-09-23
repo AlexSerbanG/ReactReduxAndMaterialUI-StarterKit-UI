@@ -2,7 +2,7 @@
 Testing a new JS dev env from Cory House's Pluralsight tutorial, but adding material-UI and configuring the structure a bit differently, to better suit my needs
 
 
-# Purpose
+## Purpose
 Develop my skills and in the end, acquire not only the knowledge but also a fine starter kit for any future projects I'll start using react and redux.
 
 ## Steps:
@@ -20,6 +20,8 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 11. Added Material UI and rendered my first mui component 
 12. Added Redux to the app and rendered my first redux connected component 
 13. Added testing capabilites using Jest
+14. Added webpack production config and also other loaders for styles/woffs and what not. Included npm scripts for build as well.
+15. Split main js to main and vendor files and added hashing for cache and cache breaking
 
 ## Help came from and thanks go to
 - Cory House with his Pluralsight courses: -Building a Javascript Development Environment and - Building Applications with React and Redux in ES6
@@ -29,4 +31,4 @@ Develop my skills and in the end, acquire not only the knowledge but also a fine
 - Dan Abramov for offering great support and documentation for the redux library
 
 ## Known Issues
-none so far
+None, so far
