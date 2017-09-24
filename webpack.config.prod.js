@@ -16,8 +16,8 @@ export default {
   },
   devtool: 'source-map',
   entry: {
-    vendor: path.resolve(__dirname, 'src/vendor'),
-    main: path.resolve(__dirname, 'src/index')
+    vendor: path.resolve(__dirname, 'src/vendor.js'),
+    main: path.resolve(__dirname, 'src/index.js')
   },
   target: 'web',
   output: {
