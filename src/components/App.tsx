@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Test from '../container/Test';
+import Test from './container/Test';
 import { Provider } from 'react-redux';
 import RaisedButton from 'material-ui/RaisedButton';
 import { ConnectedRouter } from 'react-router-redux';
